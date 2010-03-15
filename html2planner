@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# The support applications.
+html2ps="$HOME/bin/html2ps -f $HOME/.html2ps/html2psrc-planner"
+ps2pdf='/usr/local/bin/ps2pdf - '
+lpr='/usr/bin/lpr -o ManualFeed=True'
+view='/usr/bin/open -f -a Preview'
+
+# If you want to review the output before printing.
+$html2ps | $ps2pdf | $view
+
+# If you want to go straight to the printer.
+# $html2ps | $ps2pdf | $lpr

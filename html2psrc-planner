@@ -1,0 +1,25 @@
+/* Configuration file for html2ps. 
+   Meant for printing out on index cards.
+*/
+
+@html2ps {
+  option { twoup: 1; }
+  margin { middle: .25in; }
+}
+
+/* Standard style sheet definitions */
+body    { font-family: Helvetica;
+          font-size: 10pt; }
+H1      { font-family: Helvetica;
+          font-size: 12pt;
+          font-weight: bold; }
+H2      { font-family: Helvetica;
+          font-size: 10pt;
+          font-weight: bold; }
+ul      { margin-left: 1.5em; }
+li      { margin-left: -.5em; }
+@page   { size: 8.5in 11in;
+          margin-left: 2in;
+          margin-right: 2.125in;
+          margin-top: .25in;
+          margin-bottom: 3.25in}

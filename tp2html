@@ -1,0 +1,36 @@
+#!/usr/bin/python
+
+import re
+from subprocess import *
+import os
+import sys
+
+# The Markdown processor.
+markdown = os.path.expanduser('~/bin/MultiMarkdown')
+
+# Regular expressions. Note: the archive RE assumes that the Archive project
+# will be at the end of the file, which is where TaskPaper puts it.
+archiveRE = re.compile(r'^Archive:.*$', re.DOTALL | re.MULTILINE)
+projectRE = re.compile(r'^(.+):$', re.MULTILINE)
+taskRE    = re.compile(r'^\t(\-.+)$', re.MULTILINE)
+
+# Grab the TaskPaper data, delete the archive, and turn the rest into Markdown.
+tpFile = sys.argv[1]
+tp = open(tpFile).read()
+md = archiveRE.sub('', tp)
+md = projectRE.sub(r'\n# \1\n', md)
+md = taskRE.sub(r'\1', md)
+
+# Convert the Markdown to HTML.
+body = Popen([markdown], stdin=PIPE, stdout=PIPE).communicate(input=md)[0]
+
+html = '''<html>
+<head>
+</head>
+<body>
+%s
+</body>
+</html>
+''' % body
+
+print html
