@@ -6,4 +6,4 @@ cp html2ps $HOME/bin/
 cp tp2html $HOME/bin/
 cp html2planner $HOME/bin/
 mkdir $HOME/.html2ps
-cp html2ps-planner $HOME/.html2ps/
+cp html2psrc-planner $HOME/.html2ps/
