@@ -1,6 +1,6 @@
 This is a set of scripts for printing a TaskPaper document onto a letter-sized sheet of paper that will then be cut down to 6x8 for inserting into a "Junior size" Circa/Rolla planner. The tasks are laid out in a nice two-column format with enough room on the right edge for binding.
 
-<img src="http://leancrew.com/all-this/images2015/20150629-Daily%20planner%20with%20TaskPaper%20list.jpgt" />
+<img src="http://leancrew.com/all-this/images2015/20150629-Daily%20planner%20with%20TaskPaper%20list.jpg" />
 
 You print this by running the "Planner print" AppleScript. There are lots of ways to do this. You run it from [the global Script menu][8]; or you can run it through third-party systems like [FastScripts][4], [LaunchBar][5], [Keyboard Maestro][6], [Alfred][7], or others that I can't think of right now.
 
