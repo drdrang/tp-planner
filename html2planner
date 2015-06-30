@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # The support applications.
-html2ps="$HOME/bin/html2ps -f $HOME/.html2ps/html2psrc-planner"
+html2ps="$HOME/Dropbox/bin/html2ps -f $HOME/.html2ps/html2psrc-planner"
 ps2pdf='/usr/local/bin/ps2pdf - '
 lpr='/usr/bin/lpr -o ManualFeed=True'
 view='/usr/bin/open -f -a Preview'
