@@ -14,7 +14,7 @@ Before running the `install.sh` script, you'll need to:
 1. Edit `tp2html` to set the path to your Markdown processor.
 2. Edit `html2planner` to set the path to `ps2pdf`.
 
-Depending on your workflow, you may also want to edit `html2planner` to have it send the generated document to Preview instead of straight to the printer. The comments in `html2planner` will tell you how to do that.
+Depending on your workflow, you may also want to edit `html2planner` to have it send the generated document to go straight to the printer instead of Preview. The comments in `html2planner` will tell you how to do that.
 
 
 [1]: http://daringfireball.net/projects/markdown/
